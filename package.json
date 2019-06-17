@@ -1,5 +1,5 @@
 {
-  "name": "platzi-badges",
+  "name": "my-web-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,9 +12,9 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
-    "react-scripts": "2.1.5"
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.0.1"
   },
   "devDependencies": {
     "faker": "^4.1.0",

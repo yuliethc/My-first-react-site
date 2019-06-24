@@ -1,16 +1,13 @@
-// const element = document.createElement('h1');
-// element.innerText = 'Hello, Platzi Badges!';
+import React from "react";
+import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import "./global.css";
 
-// const container = document.getElementById('app');
+import BadgeNew from "./pages/BadgeNew";
+import Badges from "./pages/Badges";
 
-// container.appendChild(element);
+/* const name = 'Yulieth';
+const jsx = <h1> Hola, soy {name}</h1>; */
+const container = document.getElementById("app");
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-const element = <h1>Hello, Platzi Badges!</h1>;
-
-const container = document.getElementById('app');
-
-// ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(element, container);
+ReactDOM.render(<Badges />, container);

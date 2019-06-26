@@ -1,6 +1,6 @@
 .Badge {
-  background: #FFFFFF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
   height: 380px;
@@ -9,7 +9,7 @@
 .Badge__header {
   padding: 0.5rem 0;
   height: 80px;
-  background: #1B1B25;
+  background: #1b1b25;
   display: flex;
   justify-content: center;
 }
@@ -20,6 +20,54 @@
   align-items: center;
   padding: 1rem 0;
 }
+.Badge__section-name-list {
+  
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%; 
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.Badge__section-job-list {
+  
+  /* flex-direction: column;
+  justify-content: center; */
+  align-items: left;
+  font-weight: normal;
+  /* padding: 0.5rem 0; */
+}
+.Badge__section-twitter-list {
+  
+  /* flex-direction: column;
+  justify-content: center; */
+  color: #6699FF;
+  align-items: left;
+  /* padding: 0.5rem 0; */
+}
+
+.Badge__avatar-list {
+  display: inline-flex;
+  border-radius: 50%;
+  margin-left: 2rem;
+  /* margin-right: 2rem; */
+  width: 120px;
+  height: 120px;
+}
+.Badge__logo-twitter-list {
+  display: inline-flex;
+  border-radius: 50%;
+   margin-right: 0.2rem;
+  width: 7%;
+  height: 7%;
+}
+
+.Badges__container-list {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 
 .Badge__section-info {
   display: flex;
@@ -27,9 +75,8 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
-  background: #F4F4F7;
+  background: #f4f4f7;
 }
-
 
 .Badge__avatar {
   border-radius: 50%;
@@ -43,7 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #98CA3F;
+  color: #98ca3f;
   font-weight: bold;
   font-style: italic;
 }

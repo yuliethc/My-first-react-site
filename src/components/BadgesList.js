@@ -9,7 +9,7 @@ class BadgesList extends React.Component {
           {this.props.badges.map(badge => {
             return (
               <div className="shadow-lg p-3 mb-5 bg-white rounded">
-                <div class="container">
+                <div className="container">
                   <div className="row justify-content-start">
                     <div className="col-4 ">
                       <img

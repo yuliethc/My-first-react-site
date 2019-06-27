@@ -1,8 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../components/styles/Badge.css";
-import logotwitter from '../pages/images/twitter.svg';
+import logotwitter from "../pages/images/twitter.svg";
 class BadgesList extends React.Component {
   render() {
+    if (this.props.badges.length == 0) {
+      return (
+        <div>
+          <h3>¡No Badges were found!</h3>
+          <Link className="btn btn-primary" to="/badges/new">
+            Create New Badge
+          </Link>
+        </div>
+      );
+    }
     return (
       <div className="Badges__container-list">
         <ul className="list-unstyled">
@@ -25,15 +36,20 @@ class BadgesList extends React.Component {
                           <span>{badge.lastName}</span>
                         </h3>
                       </li>
-                      <div><h6 className="Badge__section-job-list">{badge.jobTitle}</h6></div>
-                      <div><h6 className="Badge__section-twitter-list"> 
-                      <img
-                        className="Badge__logo-twitter-list"
-                        src={logotwitter}
-                        alt="twitterlogo"
-                      />
-                      <a href="https://twitter.com/">@{badge.twitter}</a>
-                      </h6>
+                      <div>
+                        <h6 className="Badge__section-job-list">
+                          {badge.jobTitle}
+                        </h6>
+                      </div>
+                      <div>
+                        <h6 className="Badge__section-twitter-list">
+                          <img
+                            className="Badge__logo-twitter-list"
+                            src={logotwitter}
+                            alt="twitterlogo"
+                          />
+                          <a href="https://twitter.com/">@{badge.twitter}</a>
+                        </h6>
                       </div>
                     </div>
                   </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../components/styles/Badge.css";
 import logotwitter from "../pages/images/twitter.svg";
+import Gravatar from "../components/Gravatar";
+
 class BadgesList extends React.Component {
   render() {
     if (this.props.badges.length == 0) {
@@ -23,9 +25,9 @@ class BadgesList extends React.Component {
                 <div className="container">
                   <div className="row justify-content-start">
                     <div className="col-4 ">
-                      <img
+                      <Gravatar
                         className="Badge__avatar-list"
-                        src={badge.avatarUrl}
+                        email={badge.email}
                         alt="Avatar"
                       />
                     </div>

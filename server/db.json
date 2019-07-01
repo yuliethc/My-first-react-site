@@ -11,7 +11,7 @@
     },
     {
       "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-      "firstName": "Major",
+      "firstName": "Major Esther",
       "lastName": "Rodriguez",
       "email": "Ilene66@hotmail.com",
       "jobTitle": "Human Research Architect",
@@ -448,6 +448,30 @@
       "jobTitle": "FullStack Developer",
       "twitter": "yuliethlubo",
       "id": "xOedtjZ"
+    },
+    {
+      "firstName": "Marco",
+      "lastName": "D'Agostini",
+      "email": "madacol@gmail.com",
+      "jobTitle": "FullStack Developer",
+      "twitter": "madacol",
+      "id": "1DNUhdO"
+    },
+    {
+      "firstName": "Martin",
+      "lastName": "Kaufman",
+      "email": "mkaufman@gmail.com",
+      "jobTitle": "FullStack Developer",
+      "twitter": "mkaufman",
+      "id": "lZG9kGI"
+    },
+    {
+      "firstName": "Monk",
+      "lastName": "Kaufman",
+      "email": "monk@gmail.com",
+      "jobTitle": "FullStack Developer",
+      "twitter": "monk",
+      "id": "4xmZAyY"
     }
   ]
 }

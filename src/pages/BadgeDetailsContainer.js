@@ -43,7 +43,6 @@ class BadgeDetailsContainer extends React.Component {
 
     try {
      await api.badges.remove(this.props.match.params.badgeId);
-     console.log('etcitera')
      this.setState({ loading: false});
       this.props.history.push('/badges')
     } catch (error) {

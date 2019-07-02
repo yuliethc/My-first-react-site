@@ -17,7 +17,7 @@ function BadgeDetails(props) {
             </div>
             <div className="col-6 BadgeDetails__hero-attendant-name">
               <h1>
-                {badge.firstName}
+                {badge.firstName}{' '}
                 {badge.lastName}
               </h1>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import confLogo from "../images/platziconf-logo.svg";
 import Badge from "../components/Badge";
+import DeleteBadgeModal from "../components/DeleteBadgeModal";
 import { Link } from "react-router-dom";
 import "./styles/BadgeDetails.css";
 
@@ -46,8 +47,10 @@ function BadgeDetails(props) {
                 </Link>
               </div>
               <div>
-                <button className="btn btn-danger">Delete</button>
+                <button onClick={props.onOpenModal}className="btn btn-danger">Delete</button>
+                <DeleteBadgeModal isOpen={props.modalIsOpen} onClose={props.onCloseModal}/>
               </div>
+              
             </div>
           </div>
         </div>

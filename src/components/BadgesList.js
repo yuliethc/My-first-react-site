@@ -33,7 +33,7 @@ class BadgesList extends React.Component {
                     </div>
                     <div className="col-8">
                       <li key={badge.id}>
-                        <Link to = {`/badges/${badge.id}/edit`}>
+                        <Link to = {`/badges/${badge.id}`}>
                         <h3 className="Badge__section-name-list">
                           <span>{badge.firstName}</span>{" "}
                           <span>{badge.lastName}</span>

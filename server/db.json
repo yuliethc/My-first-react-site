@@ -11,8 +11,8 @@
     },
     {
       "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-      "firstName": "Major Esther",
-      "lastName": "Rodriguez 1",
+      "firstName": "Major",
+      "lastName": "Rodriguez",
       "email": "Ilene66@hotmail.com",
       "jobTitle": "Human Research Architect",
       "twitter": "MajorRodriguez61545",
@@ -472,6 +472,14 @@
       "jobTitle": "FullStack Developer",
       "twitter": "monk",
       "id": "4xmZAyY"
+    },
+    {
+      "firstName": "Yulieth",
+      "lastName": "Lubo Romero",
+      "email": "yuliethlubo@contatrib.com",
+      "jobTitle": "FullStack Developer",
+      "twitter": "@yuliethlubo",
+      "id": "X5cq-iR"
     }
   ]
 }

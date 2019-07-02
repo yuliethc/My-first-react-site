@@ -3,7 +3,6 @@ import PageError from "../components/PageError";
 import PageLoading from "../components/PageLoading";
 import api from "../api";
 import BadgeDetails from "../pages/BadgeDetails";
-import { ENGINE_METHOD_DIGESTS } from "constants";
 
 class BadgeDetailsContainer extends React.Component {
   state = {
@@ -39,7 +38,18 @@ class BadgeDetailsContainer extends React.Component {
       modalIsOpen: false
     });
   };
+  handleDeleteBadge = async e =>{
+    this.setState({ loading: true, error: null });
 
+    try {
+     await api.badges.remove(this.props.match.params.badgeId);
+     console.log('etcitera')
+     this.setState({ loading: false});
+      this.props.history.push('/badges')
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  }
 
   render() {
     if (this.state.loading) {
@@ -54,6 +64,7 @@ class BadgeDetailsContainer extends React.Component {
         onCloseModal={this.handleCloseModal}
         onOpenModal={this.handleOpenModal}
         modalIsOpen={this.state.modalIsOpen}
+        onDeleteBadge={this.handleDeleteBadge}
         badge={this.state.data}
       />
     );
